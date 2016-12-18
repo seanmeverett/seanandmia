@@ -1,0 +1,203 @@
+/* TYPOGRAPHY CUSTOMIZATIONS 
+______________________________________________*/
+
+body, html {
+    height: 100%;
+    margin: 0;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 300;
+    color: #000000;
+
+    /* Safari 4-5, Chrome 1-9 */
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffffff), to(#ffebeb));
+
+    /* Safari 5.1, Chrome 10+ */
+    background: -webkit-linear-gradient(top, #ffffff, #ffebeb);
+
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(top, #ffffff, #ffebeb);
+
+    /* IE 10 */
+    background: -ms-linear-gradient(top, #ffffff, #ffebeb);
+
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(top, #ffffff, #ffebeb);
+}
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+	font-size: 80px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+    letter-spacing: 10px;
+	line-height: 40px;
+}
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+	font-size: 48px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+    letter-spacing: 10px;
+	line-height: 36px;
+}
+h3 {
+    font-family: 'Josefin Sans', sans-serif;
+	font-size: 32px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+    letter-spacing: 10px;
+	line-height: 30px;
+}
+h4 {
+    font-family: 'Josefin Sans', sans-serif;
+	font-size: 28px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+    letter-spacing: 2px;
+	line-height: 30px;
+}
+p, ul {
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+    letter-spacing: 2px;
+	font-weight: 300;
+	line-height: 18px;
+}
+a {
+    color: #777777;
+    text-decoration: none;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 300;
+    letter-spacing: 1.5px;
+	line-height: 20px;
+}
+a:hover {
+    color: #b7b7b7;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    line-height: 20px;
+}
+.white {
+  color: #ffffff;
+  text-shadow: 0 1px 0 #000;
+}
+.gold {
+  color:#c3a343;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(transparent, transparent),
+  url(/img/rosegold.jpg) repeat;
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
+}
+.underline {
+  text-decoration: underline;
+}
+
+
+/* IMAGE, BUTTON & SPACING CUSTOMIZATIONS 
+______________________________________________*/
+
+
+.logo {
+  padding-top: 350px;
+}
+.top1xspace {
+  padding-top: 100px;
+}
+.top2xspace {
+  padding-top: 200px;
+}
+.top3xspace {
+  padding-top: 300px;
+}
+.top5xspace {
+  padding-top: 500px;
+}
+.top6xspace {
+  padding-top: 600px;
+}
+.bottomspace {
+  padding-bottom: 100px;
+}
+.bgimg-1 {
+  background-attachment: scroll;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimg-1 {
+  background-image: url("../img/morganite.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 300px;
+}
+.media {
+  padding-bottom: 20px;
+}
+.media-object {
+  width: 64px;
+  height: 64px;
+}
+.btn {
+  border-width: 1px;
+  background-color: transparent;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  padding: 8px 16px;
+  font-weight: 300;
+  border-color: #000000;
+  color: #000000;
+}
+.btn-white {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+.btn:hover, .btn:focus, .btn:active, .btn.active, .open > .btn.dropdown-toggle {
+  background-color: transparent;
+  color: #b7b7b7;
+  font-weight: 300;
+  border-color: #b7b7b7;
+}
+.btn.btn-fill {
+  border-color: #ffffff;
+  border-width: 1px;
+  color: #ffffff;
+  font-size: 20px;
+  background-color: #000000;
+}
+.btn.btn-fill:hover, .btn.btn-fill:focus, .btn.btn-fill:active, .btn.btn-fill.active, .open > .btn.btn-fill.dropdown-toggle {
+  border-color: #000000;
+  border-width: 1px;
+  font-size: 20px;
+  background-color: #ffffff;
+  color: #000000;
+  line-height: 28px;
+}
+.btn.btn-fill .caret {
+  border-top-color: white;
+}
+.btn .caret {
+  border-top-color: #888888;
+}
+.btn:hover, .btn:focus {
+  outline: 0 !important;
+}
+.btn:active, .btn.active, .open > .btn.dropdown-toggle {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: 0 !important;
+}
+.btn.btn-icon {
+  padding: 8px;
+}
