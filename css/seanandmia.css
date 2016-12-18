@@ -140,7 +140,11 @@ ______________________________________________*/
   background-image: url("../img/morganite.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 300px;
+  background-size: auto;
+  min-height: 600px;
+}
+.bgblack {
+  background-color: #000000;
 }
 .media {
   padding-bottom: 20px;
