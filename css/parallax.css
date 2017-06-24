@@ -1,0 +1,1 @@
+.parallax{-ms-background-position-x:center;background-position-x:center;position:relative;overflow:hidden}.parallax>*{position:relative;z-index:3}.parallax .parallax-bg-img{position:absolute;top:50%;left:50%;width:auto;height:auto;min-width:100%;max-width:none;z-index:-1}.parallax .parallax-bg-img.mode-2{top:0}

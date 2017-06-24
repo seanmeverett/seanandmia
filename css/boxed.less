@@ -1,0 +1,30 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Boxed Layout
+
+-------------------------------------------------------------------*/
+
+
+
+
+/*------------------------------------------------------------------
+[1. Boxed Layout]
+*/
+
+section.section-hero, body>footer, .separator.parallax{
+	border: 2rem solid #fff;
+}
+
+.separator.parallax{
+	padding-top: (@marginHorizontal/2 + 1rem);
+	padding-bottom: (@marginHorizontal/2 + 1rem);
+	margin-top: (@marginHorizontal/4*3 - 1rem);
+	margin-bottom: (@marginHorizontal/4*3 - 1rem);
+}
+
+@media only screen and (max-width: 599px){
+	section.section-hero, body>footer, .separator.parallax{
+		border: 1rem solid #fff;
+	}
+}

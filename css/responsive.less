@@ -1,0 +1,239 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Media queries (max-width: 991px)
+2. Media queries (max-width: 767px)
+3. Media queries (max-width: 599px)
+
+-------------------------------------------------------------------*/
+
+
+
+
+
+/*------------------------------------------------------------------
+[1. Media queries (max-width: 991px)]
+*/
+
+@media only screen and (max-width: 991px){
+	.flex-responsive{
+		display: block !important;
+
+		&>div, &>li, &>ul, &>aside{
+			width: 100% !important;
+			margin: 0 !important;
+		}
+	}
+
+	body>nav{
+		.menu-wrapper{
+			padding-left: 0;
+			padding-right: 0;
+			background-color: rgba(255,255,255,.95);
+
+			ul.menu{
+				padding-top: 3rem;
+
+				&>li{
+					display: block;
+					&+li{
+						margin-left: 0;
+					}
+				}
+			}
+		}
+		button.open-menu{
+			display: block;
+		}
+
+		&:not(.opened){
+			.menu-wrapper{
+				max-height: 3rem !important;
+			}
+		}
+	}
+
+	section{
+		padding-left: @marginHorizontal/2;
+		padding-right: @marginHorizontal/2;
+
+		&.section-couple .bride-and-groom{
+			&:before{
+				top: 50%;
+				margin-top: 0;
+			}
+			&>.groom{
+				padding-bottom: 2em;
+			}
+			&>.bride{
+				padding-top: 8em;
+			}
+		}
+
+		&.section-events ul.event-list>li{
+			.event-details .cta a.btn{
+				font-size: .7em;
+				letter-spacing: 2px;
+				padding: .8em 1.2em;
+			}
+
+			.event-thumbnail{
+				padding-top: 100%;
+				margin-bottom: 1em !important;
+			}
+		}
+
+		&.section-rsvp form>.form-wrapper .right{
+			padding-top: 1em;
+		}
+
+		&.section-story ul.timeline{
+			margin-top: 2em;
+
+			&:before{
+				display: none;
+			}
+
+			&>li{
+				.meta .date{
+					font-size: 1.5em;
+				}
+				svg.heart{
+					display: none;
+				}
+				.desc{
+					padding-left: 0;
+					padding-top: 1em;
+				}
+				&+li{
+					margin-top: 2em;
+				}
+			}
+		}
+	}
+
+	body>section.section-gallery, body>.main-wrapper #secondary section{
+		.gallery-overlay{
+			.gallery-modal{
+				&.opened{
+					height: ~'calc(100% - 160px)';
+				}
+				.overflow-wrapper{
+					overflow: auto;
+					height: 100%;
+				}
+				.modal-main{
+					.left{
+						padding-right: 0;
+					}
+
+					.right{
+						margin-bottom: @marginHorizontal/2 !important;
+					}
+				}
+			}
+		}
+	}
+
+	.separator.parallax, body>footer{
+		padding-left: @marginHorizontal/2;
+		padding-right: @marginHorizontal/2;
+	}
+}
+
+
+
+
+
+/*------------------------------------------------------------------
+[2. Media queries (max-width: 767px)]
+*/
+
+@media only screen and (max-width: 767px){
+	section, .separator.parallax, body>footer{
+		padding-left: @marginHorizontal/4;
+		padding-right: @marginHorizontal/4;
+	}
+
+	section{
+		.section-intro{
+			max-width: 100%;
+		}
+
+		&.section-people{
+			.col-sm-3+.col-sm-3{
+				margin-top: 1em;
+			}
+		}
+
+		&.section-events ul.event-list>li .event-details .cta a.btn{
+			display: block;
+			&+a.btn{
+				margin: 0;
+				margin-top: 1em;
+			}
+		}
+
+		&.section-gallery{
+			.gallery-grid>.gallery-grid-item{
+				width: 100%;
+			}
+			header ul.gallery-cats>li{
+				display: block;
+
+				&+li{
+					margin-left: 0;
+				}
+			}
+		}
+
+		&.section-gifts{
+			.retailer-list .row+.row, .col-sm-6 + .col-sm-6{
+				margin-top: 1em;
+			}
+		}
+	}
+
+	.separator.parallax{
+		h2{
+			font-size: 1.5em;
+			margin-bottom: 0;
+		}
+		.decor{
+			font-size: 1.5em;
+		}
+		.countdown-area{
+			font-size: 1.25em;
+			ul{
+				display: block;
+				li{
+					margin: 1em 0 0;
+					span.digits{
+						font-size: 2em;
+					}
+					span.unit{
+						font-size: 1em;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+/*------------------------------------------------------------------
+[3. Media queries (max-width: 599px)]
+*/
+
+@media only screen and (max-width: 599px){
+	section.section-hero .owl-carousel.owl-theme .owl-nav.disabled+.owl-dots{
+		display: none;
+	}
+	section, .separator.parallax, body>footer{
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}
